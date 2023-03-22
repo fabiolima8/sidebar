@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <link rel="stylesheet" href="./style.css"/>
+
+    <title>Projeto Sidebar</title>
+</head>
+<body>
+    
+    <aside class="sidebar">
+        <header class="sidebar-header">
+            <img class="logo-img" src="imagem/Fabio Lima Dev.png" alt="Foto do Usuário">
+        </header>
+        <nav class="border">
+            <button>
+                <span>
+                    <i class="material-symbols-outlined">home</i>
+                    <span>Home</span>
+                    
+                </span>
+            </button>
+
+            <button>
+                <span>
+                    <i class="material-symbols-outlined">tag</i>
+                    <span>Explorar</span>
+                    
+                </span>
+            </button>
+
+            <button>
+                <span>
+                    <i class="material-symbols-outlined">email</i>
+                    <span>Mensagens</span>
+                    
+                </span>
+            </button>
+
+            <button>
+                <span>
+                    <i class="material-symbols-outlined">person</i>
+                    <span>Profile</span>
+                    
+                </span>
+            </button>
+        </nav>
+    </aside>
+    <!--Criando ummenu mobile-->
+
+    <button class="button-mobile" onclick="toggleMenu()">
+        <i class="material-symbols-outlined">menu</i>
+        <span>Menu</span>
+    </button>
+    <nav class="menu-mobile" id="menu-mobile">
+        <button class="button-close" onclick="toggleMenu()">
+            <span>
+                <i class="material-symbols-outlined"  >Close</i>
+            </span>
+        </button>
+
+        <button>
+            <span>
+                <i class="material-symbols-outlined">home</i>
+                <span class="mobile-text">Home</span>
+                
+            </span>
+        </button>
+
+        <button>
+            <span>
+                <i class="material-symbols-outlined">tag</i>
+                <span class="mobile-text">Explorar</span>
+                
+            </span>
+        </button>
+
+        <button>
+            <span>
+                <i class="material-symbols-outlined">email</i>
+                <span class="mobile-text">Mensagens</span>
+                
+            </span>
+        </button>
+
+        <button>
+            <span>
+                <i class="material-symbols-outlined">person</i>
+                <span class="mobile-text">Profile</span>
+                
+            </span>
+        </button>
+
+    </nav>
+    <main class="main">
+        <h1>Bem Vindo ao Site Fabio Lima Dev</h1>
+        <span>@fabio_lima_dev</span>
+
+        <h2 class="subtitulo">O que é Desenvolvimento Web?</h2>
+
+        <p>Desenvolvimento web significa codificar páginas para a internet. No entanto, essa tarefa vai além da utilização de <span>HTML e CSS</span>, as ferramentas básicas para a criação de uma página estática — que apresenta informações que só podem ser modificadas com a edição do código fonte.</p>
+
+        <h2>O que é um website?</h2>
+
+        <p>É um local que pode ser acessado na internet, <span>por meio de uma URL</span>, e possui um conjunto de páginas programadas em alguma linguagem. </p>
+
+        <h2>Quais as vantagens dos sistemas web?</h2>
+
+        <p>Diversos fatores contribuem para que as empresas prefiram investir em uma aplicação web. Uma delas é a redução no investimento com a infraestrutura necessária para a utilização de aplicações locais, em que há o custo com licenças de softwares, além das despesas com o hardware necessário.</p>
+
+        
+    </main>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
